@@ -1,0 +1,47 @@
+.groups {
+  @extend .clearfix;
+  width: 50%;
+  float: left;
+
+  .group {
+    @extend .box;
+    width: 24%;
+    margin: 0 1% 10px 0;
+    float: left;
+
+    .group-name {
+      width: 100%;
+      text-align: center;
+      margin: 0 0 $lineheight 0;
+    }
+  }
+
+  .team-glob {
+    @extend .clearfix;
+    width: 100%;
+    position: relative;
+   }
+
+  .flag { display: none; }
+
+  .nation {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: $lineheight;
+    padding-right: $lineheight + 5px;
+    margin: 0 0 5px 0;
+    //float: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  .avatar {
+    width: $lineheight;
+    height: $lineheight;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+}

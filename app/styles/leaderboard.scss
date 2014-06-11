@@ -1,0 +1,32 @@
+$leaderboardLine: 30px;
+
+.leaderboard {
+	@extend .clearfix;
+	@extend .box;
+  	width: 50%;
+
+  	.team-glob {
+  		@extend .clearfix;
+  		width: 100%;
+  		display: block;
+  		margin-bottom: 5px;
+
+  		.flag, h3 { float: left; }
+
+  		.flag {
+  			width: $leaderboardLine;
+  			height: $leaderboardLine;
+  		}
+
+  		h3 {
+  			margin: 0 0 0 $leaderboardLine/4;
+  			line-height: $leaderboardLine;
+  		}
+
+  		.avatar {
+  			width: $leaderboardLine;
+  			height: $leaderboardLine;
+  			float: right;
+		}
+  	}
+}
